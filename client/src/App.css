@@ -1,0 +1,90 @@
+
+/*signin*/
+.formdiv {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: 30px auto;
+  min-height: 90vh;
+  border-radius: 2%;
+  border-bottom: 1px;
+  box-shadow: 0 24px 80px hsla(0, 0%, 0%, 0.25);
+}
+
+.formdiv img {
+  width: 50%;
+  height: 90vh;
+  object-fit: cover;
+  border-radius: 0 2% 2% 0;
+
+}
+
+.formdiv form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  margin: auto;
+  text-align: right;
+}
+
+.formdiv form h3 {
+  color: rgb(16, 155, 211);
+  font-size: 35px;
+  text-align: center;
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+.formdiv form input {
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 60px;
+  padding: 10px 16px;
+  outline: none;
+  border: 1px solid #868686;
+  color: black;
+}
+
+.formdiv form input::placeholder,
+.formdiv form textarea::placeholder {
+  color: rgb(223, 222, 222);
+  font-size: 20px;
+  text-align: right;
+  padding: 20px;
+}
+
+.formdiv button {
+  display: inline-block;
+  background: #0181f5;
+  background: linear-gradient(to right, #0181f5 0%, #5db2ff 100%);
+  border: 1px solid #0181f5;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 1%;
+  margin: 10px 0;
+  width: 250px;
+  font-size: 18px;
+  margin: 20px 0;
+  font-weight: 600;
+  text-align: center;
+
+}
+
+.formdiv button:hover {
+  transition: all .5s ease-in-out;
+  background: white;
+  border: 1px solid #0181f5;
+  color: black;
+}
+
+@media screen and (max-width:768px) {
+  .formdiv {
+      flex-wrap: wrap;
+  }
+
+  .formdiv img {
+      height: 40vh;
+      width: 80%;
+  }
+
+}
